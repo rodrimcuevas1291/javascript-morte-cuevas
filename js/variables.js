@@ -3,12 +3,13 @@
 // DESAFIO 1
 
 let welcome = alert("Bienvenidos a Simplo Cocina, a continuación seleccionará el menú para que le enviemos!")
+// MIENTRAS NO INGRESE UNA OPCIÓN VÁLIDA, YA SEA 1 O 2, SEGUIRÁ REPITIENDO LA PREGUNTA
 let menu = parseInt(prompt("Que deseas comer hoy?(Ingresa solamente el número de la opción): 1-Pizza, 2-Empanadas"))
 while ((menu != 1 && menu != 2)) {
     alert("Producto inexistente, por favor escoja una opción válida")
     menu = parseInt(prompt("Que deseas comer hoy?(Ingresa solamente el número de la opción): 1-Pizza, 2-Empanadas"))
 }
-        
+//EN LA FUNCION HACE SELECCIONAR SEGUN LA OPCION INGRESADA EN "MENU", QUE SABOR QUIERE, EN CASO DE QUE SEA EMPANADAS LA ELEGIDA, LE DEJARÁ ELEGIR SABOR Y CANTIDAD
 function pedido() {
     switch (menu){
         case 1:
